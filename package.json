@@ -1,0 +1,7 @@
+{
+  "name": "Boilerplate",
+  "dependencies": {
+    "connect": "2.14.3",
+    "less-middleware": "0.1.12"
+  }
+}

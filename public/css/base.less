@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    -webkit-transform: translate3d(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    min-width: 1080px;
+    min-height: 980px;
+    background-color: #f3f3f3;
+    font-family: Helvetica;
+    /*font-family: "Helvetica Neue", Helvetica, "Gill Sans", Verdana, Arial, sans-serif;*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+div, img {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+#app {
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+    position: relative;
+}
+
+.touch_view, .old_touch {
+    display: none;
+    position: absolute;
+    z-index: 100000;
+    /*-webkit-mask-image: url('mask.png') no-repeat fixed center center padding padding;*/
+    /*background-image: url(../images/fingerprint.png);*/
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(../images/fingerprint.png);
+    -webkit-mask-position: 48% 56%;
+    -webkit-mask-size: 130px;
+
+    background-color: rgba(0, 255, 255, 0.75);
+
+    height: 40px;
+    width: 30px;
+    margin: -20px 0 0 -15px;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+.touching .touch_view, .touching .old_touch {
+    display: block;
+}
+
+.old_touch {
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+
+    &.hot {
+        opacity: 0.3;
+    }
+}
+
+.touchable {
+    cursor: pointer;
+}
+
+.touching .touchable {
+    cursor: none;
+}
+
+.pie {
+    position: relative;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 100%;
+        border: 2px solid #333;
+        box-shadow: #474 2px 2px 2px;
+    }
+}

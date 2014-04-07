@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bee5640c-b261-4b10-9110-06bb81640442}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Instafeed</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="public\bower_components\backbone-amd\.bower.json" />
+    <Content Include="public\bower_components\backbone-amd\.gitignore" />
+    <Content Include="public\bower_components\backbone-amd\.npmignore" />
+    <Content Include="public\bower_components\backbone-amd\.travis.yml" />
+    <Content Include="public\bower_components\backbone-amd\backbone-min.map" />
+    <Content Include="public\bower_components\backbone-amd\CNAME" />
+    <Content Include="public\bower_components\backbone-amd\CONTRIBUTING.md" />
+    <Content Include="public\bower_components\backbone-amd\docs\backbone-localstorage.html" />
+    <Content Include="public\bower_components\backbone-amd\docs\backbone.html" />
+    <Content Include="public\bower_components\backbone-amd\docs\backbone.localstorage.html" />
+    <Content Include="public\bower_components\backbone-amd\docs\docco.css" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\airbnb.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\arrows.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\artsy.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\backbone-mobile.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\backbone.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\background.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\baroque.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\basecamp-calendar.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\bitbucket.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\blossom.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\cloudapp.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\code-school.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\dc-workspace.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\diaspora.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\disqus.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\do.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\easel.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\favicon.ico" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\flow.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\foursquare.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\gawker.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\gilt.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\groupon.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\hulu.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\inkling.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\irccloud.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\jolicloud.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\khan-academy.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\lens.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\menagerievet.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\newsblur.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\pandora.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\pitchfork.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\quartz.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\rdio.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\salon.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\seatgeek.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\slavery-footprint.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\soundcloud.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\spin.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\stripe.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\syllabus.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\tilemill.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\todos.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\trello.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\tzigla.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\usa-today.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\walmart-mobile.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\wpcom-notifications.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\images\zocdoc.jpg" />
+    <Content Include="public\bower_components\backbone-amd\docs\jsl.conf" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-bold.eot" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-bold.ttf" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-bold.woff" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-light.eot" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-light.ttf" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\aller-light.woff" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\fleurons.eot" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\fleurons.ttf" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\fleurons.woff" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\novecento-bold.eot" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\novecento-bold.ttf" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\fonts\novecento-bold.woff" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\images\grey_%402X.png" />
+    <Content Include="public\bower_components\backbone-amd\docs\public\stylesheets\normalize.css" />
+    <Content Include="public\bower_components\backbone-amd\docs\todos.html" />
+    <Content Include="public\bower_components\backbone-amd\LICENSE" />
+    <Content Include="public\bower_components\backbone-amd\README.md" />
+    <Content Include="public\bower_components\jquery\.bower.json" />
+    <Content Include="public\bower_components\jquery\.editorconfig" />
+    <Content Include="public\bower_components\jquery\.gitattributes" />
+    <Content Include="public\bower_components\jquery\.gitignore" />
+    <Content Include="public\bower_components\jquery\.gitmodules" />
+    <Content Include="public\bower_components\jquery\.jshintrc" />
+    <Content Include="public\bower_components\jquery\AUTHORS.txt" />
+    <Content Include="public\bower_components\jquery\component.json" />
+    <Content Include="public\bower_components\jquery\composer.json" />
+    <Content Include="public\bower_components\jquery\CONTRIBUTING.md" />
+    <Content Include="public\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="public\bower_components\jquery\package.json" />
+    <Content Include="public\bower_components\jquery\README.md" />
+    <Content Include="public\bower_components\jquery\speed\benchmarker.css" />
+    <Content Include="public\bower_components\jquery\speed\closest.html" />
+    <Content Include="public\bower_components\jquery\speed\css.html" />
+    <Content Include="public\bower_components\jquery\speed\event.html" />
+    <Content Include="public\bower_components\jquery\speed\filter.html" />
+    <Content Include="public\bower_components\jquery\speed\find.html" />
+    <Content Include="public\bower_components\jquery\speed\index.html" />
+    <Content Include="public\bower_components\jquery\speed\slice.vs.concat.html" />
+    <Content Include="public\bower_components\jquery\src\.jshintrc" />
+    <Content Include="public\bower_components\jquery\test\.jshintignore" />
+    <Content Include="public\bower_components\jquery\test\.jshintrc" />
+    <Content Include="public\bower_components\jquery\test\csp.php" />
+    <Content Include="public\bower_components\jquery\test\data\1x1.jpg" />
+    <Content Include="public\bower_components\jquery\test\data\atom+xml.php" />
+    <Content Include="public\bower_components\jquery\test\data\cleanScript.html" />
+    <Content Include="public\bower_components\jquery\test\data\dashboard.xml" />
+    <Content Include="public\bower_components\jquery\test\data\dimensions\documentLarge.html" />
+    <Content Include="public\bower_components\jquery\test\data\dimensions\documentSmall.html" />
+    <Content Include="public\bower_components\jquery\test\data\echoData.php" />
+    <Content Include="public\bower_components\jquery\test\data\echoQuery.php" />
+    <Content Include="public\bower_components\jquery\test\data\errorWithText.php" />
+    <Content Include="public\bower_components\jquery\test\data\etag.php" />
+    <Content Include="public\bower_components\jquery\test\data\evalScript.php" />
+    <Content Include="public\bower_components\jquery\test\data\event\longLoadScript.php" />
+    <Content Include="public\bower_components\jquery\test\data\event\promiseReady.html" />
+    <Content Include="public\bower_components\jquery\test\data\event\syncReady.html" />
+    <Content Include="public\bower_components\jquery\test\data\headers.php" />
+    <Content Include="public\bower_components\jquery\test\data\iframe.html" />
+    <Content Include="public\bower_components\jquery\test\data\if_modified_since.php" />
+    <Content Include="public\bower_components\jquery\test\data\json.php" />
+    <Content Include="public\bower_components\jquery\test\data\jsonp.php" />
+    <Content Include="public\bower_components\jquery\test\data\manipulation\iframe-denied.html" />
+    <Content Include="public\bower_components\jquery\test\data\name.html" />
+    <Content Include="public\bower_components\jquery\test\data\name.php" />
+    <Content Include="public\bower_components\jquery\test\data\offset\absolute.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\body.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\fixed.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\relative.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\scroll.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\static.html" />
+    <Content Include="public\bower_components\jquery\test\data\offset\table.html" />
+    <Content Include="public\bower_components\jquery\test\data\params_html.php" />
+    <Content Include="public\bower_components\jquery\test\data\script.php" />
+    <Content Include="public\bower_components\jquery\test\data\selector\html5_selector.html" />
+    <Content Include="public\bower_components\jquery\test\data\selector\sizzle_cache.html" />
+    <Content Include="public\bower_components\jquery\test\data\statusText.php" />
+    <Content Include="public\bower_components\jquery\test\data\support\bodyBackground.html" />
+    <Content Include="public\bower_components\jquery\test\data\support\shrinkWrapBlocks.html" />
+    <Content Include="public\bower_components\jquery\test\data\support\testElementCrash.html" />
+    <Content Include="public\bower_components\jquery\test\data\test.html" />
+    <Content Include="public\bower_components\jquery\test\data\test.php" />
+    <Content Include="public\bower_components\jquery\test\data\test2.html" />
+    <Content Include="public\bower_components\jquery\test\data\test3.html" />
+    <Content Include="public\bower_components\jquery\test\data\testsuite.css" />
+    <Content Include="public\bower_components\jquery\test\data\text.php" />
+    <Content Include="public\bower_components\jquery\test\data\ua.txt" />
+    <Content Include="public\bower_components\jquery\test\data\with_fries.xml" />
+    <Content Include="public\bower_components\jquery\test\data\with_fries_over_jsonp.php" />
+    <Content Include="public\bower_components\jquery\test\delegatetest.html" />
+    <Content Include="public\bower_components\jquery\test\hovertest.html" />
+    <Content Include="public\bower_components\jquery\test\index.html" />
+    <Content Include="public\bower_components\jquery\test\localfile.html" />
+    <Content Include="public\bower_components\jquery\test\networkerror.html" />
+    <Content Include="public\bower_components\jquery\test\polluted.php" />
+    <Content Include="public\bower_components\jquery\test\readywait.html" />
+    <Content Include="public\bower_components\jquery\test\xhtml.php" />
+    <Content Include="public\bower_components\requirejs-text\.bower.json" />
+    <Content Include="public\bower_components\requirejs-text\LICENSE" />
+    <Content Include="public\bower_components\requirejs-text\package.json" />
+    <Content Include="public\bower_components\requirejs-text\README.md" />
+    <Content Include="public\bower_components\requirejs\.bower.json" />
+    <Content Include="public\bower_components\requirejs\bower.json" />
+    <Content Include="public\bower_components\requirejs\README.md" />
+    <Content Include="public\bower_components\underscore-amd\.bower.json" />
+    <Content Include="public\bower_components\underscore-amd\.gitignore" />
+    <Content Include="public\bower_components\underscore-amd\.travis.yml" />
+    <Content Include="public\bower_components\underscore-amd\CNAME" />
+    <Content Include="public\bower_components\underscore-amd\CONTRIBUTING.md" />
+    <Content Include="public\bower_components\underscore-amd\docs\docco.css" />
+    <Content Include="public\bower_components\underscore-amd\docs\favicon.ico" />
+    <Content Include="public\bower_components\underscore-amd\docs\images\background.png" />
+    <Content Include="public\bower_components\underscore-amd\docs\images\underscore.png" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-bold.eot" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-bold.ttf" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-bold.woff" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-light.eot" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-light.ttf" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\aller-light.woff" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\novecento-bold.eot" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\novecento-bold.ttf" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\fonts\novecento-bold.woff" />
+    <Content Include="public\bower_components\underscore-amd\docs\public\stylesheets\normalize.css" />
+    <Content Include="public\bower_components\underscore-amd\docs\underscore.html" />
+    <Content Include="public\bower_components\underscore-amd\favicon.ico" />
+    <Content Include="public\bower_components\underscore-amd\index.html" />
+    <Content Include="public\bower_components\underscore-amd\LICENSE" />
+    <Content Include="public\bower_components\underscore-amd\package.json" />
+    <Content Include="public\bower_components\underscore-amd\Rakefile" />
+    <Content Include="public\bower_components\underscore-amd\README.md" />
+    <Content Include="public\bower_components\underscore-amd\test\index.html" />
+    <Content Include="public\bower_components\underscore-amd\test\vendor\qunit.css" />
+    <Content Include="public\bower_components\underscore-amd\underscore-min.map" />
+    <Content Include="README.txt" />
+    <Content Include="package.json" />
+    <Compile Include="public\bower_components\backbone-amd\backbone-min.js" />
+    <Compile Include="public\bower_components\backbone-amd\backbone.js" />
+    <Compile Include="public\bower_components\backbone-amd\docs\js\jquery.lazyload.js" />
+    <Compile Include="public\bower_components\jquery\build\release-notes.js" />
+    <Compile Include="public\bower_components\jquery\build\release.js" />
+    <Compile Include="public\bower_components\jquery\Gruntfile.js" />
+    <Compile Include="public\bower_components\jquery\jquery.js" />
+    <Compile Include="public\bower_components\jquery\jquery.min.js" />
+    <Compile Include="public\bower_components\jquery\speed\benchmark.js" />
+    <Compile Include="public\bower_components\jquery\speed\benchmarker.js" />
+    <Compile Include="public\bower_components\jquery\speed\jquery-basis.js" />
+    <Compile Include="public\bower_components\jquery\src\ajax.js" />
+    <Compile Include="public\bower_components\jquery\src\ajax\jsonp.js" />
+    <Compile Include="public\bower_components\jquery\src\ajax\script.js" />
+    <Compile Include="public\bower_components\jquery\src\ajax\xhr.js" />
+    <Compile Include="public\bower_components\jquery\src\attributes.js" />
+    <Compile Include="public\bower_components\jquery\src\callbacks.js" />
+    <Compile Include="public\bower_components\jquery\src\core.js" />
+    <Compile Include="public\bower_components\jquery\src\css.js" />
+    <Compile Include="public\bower_components\jquery\src\data.js" />
+    <Compile Include="public\bower_components\jquery\src\deferred.js" />
+    <Compile Include="public\bower_components\jquery\src\deprecated.js" />
+    <Compile Include="public\bower_components\jquery\src\dimensions.js" />
+    <Compile Include="public\bower_components\jquery\src\effects.js" />
+    <Compile Include="public\bower_components\jquery\src\event.js" />
+    <Compile Include="public\bower_components\jquery\src\exports.js" />
+    <Compile Include="public\bower_components\jquery\src\intro.js" />
+    <Compile Include="public\bower_components\jquery\src\manipulation.js" />
+    <Compile Include="public\bower_components\jquery\src\offset.js" />
+    <Compile Include="public\bower_components\jquery\src\outro.js" />
+    <Compile Include="public\bower_components\jquery\src\queue.js" />
+    <Compile Include="public\bower_components\jquery\src\serialize.js" />
+    <Compile Include="public\bower_components\jquery\src\sizzle-jquery.js" />
+    <Compile Include="public\bower_components\jquery\src\support.js" />
+    <Compile Include="public\bower_components\jquery\src\traversing.js" />
+    <Compile Include="public\bower_components\jquery\test\data\badcall.js" />
+    <Compile Include="public\bower_components\jquery\test\data\badjson.js" />
+    <Compile Include="public\bower_components\jquery\test\data\jquery-1.8.2.ajax_xhr.min.js" />
+    <Compile Include="public\bower_components\jquery\test\data\json_obj.js" />
+    <Compile Include="public\bower_components\jquery\test\data\readywaitasset.js" />
+    <Compile Include="public\bower_components\jquery\test\data\readywaitloader.js" />
+    <Compile Include="public\bower_components\jquery\test\data\test.js" />
+    <Compile Include="public\bower_components\jquery\test\data\testinit.js" />
+    <Compile Include="public\bower_components\jquery\test\data\testrunner.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\ajax.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\attributes.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\callbacks.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\core.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\css.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\data.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\deferred.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\deprecated.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\dimensions.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\effects.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\event.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\exports.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\manipulation.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\offset.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\queue.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\selector.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\serialize.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\support.js" />
+    <Compile Include="public\bower_components\jquery\test\unit\traversing.js" />
+    <Compile Include="public\bower_components\requirejs-text\text.js" />
+    <Compile Include="public\bower_components\requirejs\require.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\arrays.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\chaining.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\collections.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\functions.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\objects.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\speed.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\utility.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\vendor\jquery.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\vendor\jslitmus.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\vendor\qunit.js" />
+    <Compile Include="public\bower_components\underscore-amd\test\vendor\runner.js" />
+    <Compile Include="public\bower_components\underscore-amd\underscore-min.js" />
+    <Compile Include="public\bower_components\underscore-amd\underscore.js" />
+    <Compile Include="server.js" />
+    <Content Include="public\index.html" />
+    <Content Include="public\bower.json" />
+    <Compile Include="public\src\bootstrap.js" />
+    <Compile Include="public\src\controllers\AppView\app.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public" />
+    <Folder Include="public\bower_components\" />
+    <Folder Include="public\bower_components\backbone-amd\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\images\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\js\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\public\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\public\fonts\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\public\images\" />
+    <Folder Include="public\bower_components\backbone-amd\docs\public\stylesheets\" />
+    <Folder Include="public\bower_components\jquery\" />
+    <Folder Include="public\bower_components\jquery\build\" />
+    <Folder Include="public\bower_components\jquery\speed\" />
+    <Folder Include="public\bower_components\jquery\src\" />
+    <Folder Include="public\bower_components\jquery\src\ajax\" />
+    <Folder Include="public\bower_components\jquery\src\sizzle\" />
+    <Folder Include="public\bower_components\jquery\test\" />
+    <Folder Include="public\bower_components\jquery\test\data\" />
+    <Folder Include="public\bower_components\jquery\test\data\dimensions\" />
+    <Folder Include="public\bower_components\jquery\test\data\event\" />
+    <Folder Include="public\bower_components\jquery\test\data\manipulation\" />
+    <Folder Include="public\bower_components\jquery\test\data\offset\" />
+    <Folder Include="public\bower_components\jquery\test\data\selector\" />
+    <Folder Include="public\bower_components\jquery\test\data\support\" />
+    <Folder Include="public\bower_components\jquery\test\qunit\" />
+    <Folder Include="public\bower_components\jquery\test\unit\" />
+    <Folder Include="public\bower_components\requirejs-text\" />
+    <Folder Include="public\bower_components\requirejs\" />
+    <Folder Include="public\bower_components\underscore-amd\" />
+    <Folder Include="public\bower_components\underscore-amd\docs\" />
+    <Folder Include="public\bower_components\underscore-amd\docs\images\" />
+    <Folder Include="public\bower_components\underscore-amd\docs\public\" />
+    <Folder Include="public\bower_components\underscore-amd\docs\public\fonts\" />
+    <Folder Include="public\bower_components\underscore-amd\docs\public\stylesheets\" />
+    <Folder Include="public\bower_components\underscore-amd\test\" />
+    <Folder Include="public\bower_components\underscore-amd\test\vendor\" />
+    <Folder Include="public\css" />
+    <Folder Include="public\images" />
+    <Folder Include="public\src" />
+    <Folder Include="public\src\components" />
+    <Folder Include="public\src\controllers\" />
+    <Folder Include="public\src\controllers\AppView" />
+    <Folder Include="public\src\models" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
