@@ -1,7 +1,8 @@
 {
-  "name": "Boilerplate",
+  "name": "Instafeed",
   "dependencies": {
     "connect": "2.14.3",
-    "less-middleware": "0.1.12"
+    "less-middleware": "0.1.12",
+    "instagram-node-lib": "~0.1.1"
   }
 }

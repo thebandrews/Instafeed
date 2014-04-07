@@ -1,5 +1,7 @@
 var connect = require('connect'), http = require('http');
 var lessMiddleware = require('less-middleware');
+var instagram = require('instagram-node-lib');
+
 var PORT = process.env.port || 1337;
 
 var app = connect()
